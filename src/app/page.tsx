@@ -1,9 +1,12 @@
+import Hero from "@/components/sections/home/Hero";
+
+
 
 
 export default function Home() {
   return (
-    <div className="font-sofia text-[300px] uppercase font-bold text-center">
-      Infinite Motion
-    </div>
+    <main>
+      <Hero />
+    </main>
   );
 }
