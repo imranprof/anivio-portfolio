@@ -1,10 +1,10 @@
 const Hero = () => {
   return (
-    <section>
+    <section className="py-[clamp(20px,5vw,45px)]">
       <h1 className="font-sofia text-[clamp(64px,15vw,300px)] uppercase font-bold text-center">
         Infinite Motion
       </h1>
-      <div className="py-[clamp(20px,5vw,60px)]">
+      <div className="card_section py-[clamp(20px,5vw,60px)]">
         <div className="flex items-center justify-center gap-4">
           <div className=" card1 h-[182px] w-[132px] bg-purple-200 rounded-xl">
             <div className="wrapper w-full h-full px-[12px] py-[8px] flex flex-col justify-between">
@@ -70,6 +70,19 @@ const Hero = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="hero_content container">
+        <div className="w-full h-full flex justify-between">
+          <div className="hero_description">
+            <p className="max-w-[600px] text-[27px] font-medium">
+              <span className="font-bold">At Anivio</span>, we craft websites that don’t just look good they move with life. Our designs blend modern aesthetics with smooth, meaningful <span className="font-bold">Animations</span>. Let’s turn your vision into an interactive story.
+            </p>
+          </div>
+          <div className="flex flex-col-reverse">
+            <span className="text-[20px] uppercase font-sofia font-semibold">Webdesign & Animation</span>
+          </div>
+        </div>
+
       </div>
     </section>
   );
