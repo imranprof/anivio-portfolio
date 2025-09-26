@@ -1,6 +1,7 @@
 import About from "@/components/sections/home/About";
 import Hero from "@/components/sections/home/Hero";
-import Service from "@/components/sections/home/service/Service";
+import { Service } from "@/components/sections/home/service/Service";
+
 
 
 
