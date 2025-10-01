@@ -68,7 +68,7 @@ export function Service() {
 
       {/* Main Content - 3 Large Cards */}
       <div className="h-full w-full flex items-center justify-center px-8 py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl w-full h-full max-h-[600px]">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-9 w-full h-full max-h-[600px]">
           {services.map((service, index) => (
             <ServiceCard
               key={index}

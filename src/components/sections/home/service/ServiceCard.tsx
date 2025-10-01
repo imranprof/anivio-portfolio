@@ -15,7 +15,7 @@ export function ServiceCard({ front, back }: ServiceCardProps) {
 
   return (
     <div
-      className="relative h-full w-full cursor-pointer perspective-1000 min-h-[500px]"
+      className="relative h-full w-full cursor-pointer perspective-1000 min-h-[500px] max-w-[420px]"
       onMouseEnter={() => setIsFlipped(true)}
       onMouseLeave={() => setIsFlipped(false)}
     >
@@ -27,7 +27,7 @@ export function ServiceCard({ front, back }: ServiceCardProps) {
       >
         {/* Front Face */}
         <div className="absolute inset-0 w-full h-full backface-hidden">
-          <div className="w-full h-full bg-stone-50 rounded-lg p-6 border border-stone-200 shadow-sm">{front}</div>
+          <div className="w-full h-full bg-stone-50 rounded-lg p-8 border border-stone-200 shadow-sm">{front}</div>
         </div>
 
         {/* Back Face */}

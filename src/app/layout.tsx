@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Sofia_Sans_Condensed } from "next/font/google";
-import "../styles/globals.css";
+import "@/styles/globals.css"
 import Header from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
 
 
 export const metadata: Metadata = {
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
