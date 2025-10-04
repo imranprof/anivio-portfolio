@@ -9,7 +9,7 @@ const services = [
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="w-full h-full"><path fill="currentColor" d="M10 0h10v10H10zM0 10h10v10H0z"></path></svg>
 
     ),
-    services: ["Visual Research", "Mitbewerber Analyse", "Wireframes", "Content Mapping", "User Flow", "Konzepte"],
+    services: ["Visual Research", "Mitbewerber Analyse", "Wireframes", "Content Mapping", "User Flow"],
     description:
       "We develop comprehensive strategies that form the foundation of successful digital products. From market research and competitor analysis to user flow optimization and concept development, we ensure every project starts with a solid strategic foundation.",
   },
@@ -26,7 +26,6 @@ const services = [
       "Design System",
       "Animation",
       "Design Support",
-      "Barrierefreies Design",
     ],
     description:
       "Our design expertise spans from corporate websites to comprehensive design systems. We create visually stunning, accessible designs that not only look great but also drive business results and provide exceptional user experiences.",
@@ -41,7 +40,6 @@ const services = [
       "Webflow Entwicklung",
       "Web Animation",
       "Webflow CMS",
-      "Barrierefreie Entwicklung",
       "Technisches SEO",
       "Frontend Support",
     ],
@@ -63,7 +61,7 @@ export function Service() {
 
       {/* Main Content - 3 Large Cards */}
       <div className="h-full w-full flex items-center justify-center px-8 py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-9 w-full h-full max-h-[600px]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-9 w-full h-full ">
           {services.map((service, index) => (
             <ServiceCard
               key={index}

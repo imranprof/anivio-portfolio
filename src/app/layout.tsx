@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Sofia_Sans_Condensed } from "next/font/google";
 import "@/styles/globals.css"
+import 'lenis/dist/lenis.css'
 import Header from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import LenisProviders from "./lenisProviders";
 
 
 export const metadata: Metadata = {
@@ -23,9 +25,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={sofia.variable}>
       <body>
-        <Header />
-        {children}
-        <Footer />
+        <LenisProviders>
+          <Header />
+          {children}
+          <Footer />
+        </LenisProviders>
       </body>
     </html>
   );
