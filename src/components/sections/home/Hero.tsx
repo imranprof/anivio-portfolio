@@ -1,12 +1,22 @@
+"use client"
+
+import { heroCardAnimation } from "@/app/animations/heroCardAnimation";
+import { useGSAP } from "@gsap/react";
+
 const Hero = () => {
+
+  useGSAP(() => {
+    heroCardAnimation();
+  }, {})
+
   return (
     <section className="py-[clamp(20px,5vw,45px)]">
       <h1 className="font-sofia text-[clamp(64px,15vw,300px)] uppercase font-bold text-center">
         Infinite Motion
       </h1>
-      <div className="card_section py-[clamp(20px,5vw,60px)]">
+      <div className="card-container card_section py-[clamp(20px,5vw,60px)]">
         <div className="flex items-center justify-center gap-4">
-          <div className=" card1 h-[182px] w-[132px] bg-purple-200 rounded-xl">
+          <div className="card1-anim card1 h-[182px] w-[132px] bg-purple-200 rounded-xl">
             <div className="wrapper w-full h-full px-[12px] py-[8px] flex flex-col justify-between">
               <div className="top w-full flex items-center justify-between">
                 <span className="text-[5px] uppercase font-semibold">Strategy</span>
@@ -27,7 +37,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className=" card2 h-[182px] w-[132px] bg-orange-100 rounded-xl">
+          <div className="card2-anim card2 h-[182px] w-[132px] bg-orange-100 rounded-xl">
             <div className="wrapper w-full h-full px-[12px] py-[8px] flex flex-col justify-between">
               <div className="top w-full flex items-center justify-between">
                 <span className="text-[5px] uppercase font-semibold">Design</span>
@@ -48,7 +58,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="card3 h-[182px] w-[132px] bg-blue-200 rounded-xl">
+          <div className="card3-anim card3 h-[182px] w-[132px] bg-blue-200 rounded-xl">
             <div className="wrapper w-full h-full px-[12px] py-[8px] flex flex-col justify-between">
               <div className="top w-full flex items-center justify-between">
                 <span className="text-[5px] uppercase font-semibold">Animation</span>
