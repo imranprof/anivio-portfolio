@@ -1,17 +1,21 @@
 "use client"
 
+import { hasTextReveal } from "@/app/animations/hasTextReveal";
 import { heroCardAnimation } from "@/app/animations/heroCardAnimation";
 import { useGSAP } from "@gsap/react";
+import { useRef } from "react";
 
 const Hero = () => {
 
+  const containerRef = useRef<HTMLElement>(null);
   useGSAP(() => {
     heroCardAnimation();
-  }, {})
+    hasTextReveal();
+  }, { scope: containerRef })
 
   return (
-    <section className="py-[clamp(20px,5vw,45px)]">
-      <h1 className="font-sofia text-[clamp(64px,15vw,300px)] uppercase font-bold text-center">
+    <section ref={containerRef} className="py-[clamp(20px,5vw,45px)]">
+      <h1 className="has-text-reveal font-sofia text-[clamp(64px,15vw,300px)] uppercase font-bold text-center">
         Infinite Motion
       </h1>
       <div className="card-container card_section py-[clamp(20px,5vw,60px)]">
