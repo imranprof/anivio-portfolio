@@ -88,7 +88,7 @@ export default function About() {
 
 
   return (
-    <section ref={sectionRef} className="container relative w-full h-screen bg-black text-white overflow-hidden">
+    <section ref={sectionRef} className="container relative w-full h-screen bg-black text-white overflow-hidden z-[4]" >
 
       {/* Header navigation */}
       <div ref={headerRef} className="absolute top-8 left-0 right-0 flex justify-between items-center px-8">

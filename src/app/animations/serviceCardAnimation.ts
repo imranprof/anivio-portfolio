@@ -18,11 +18,11 @@ console.log(cards,innerCards)
         start: "top top",
         end: "bottom 50%",
         pin: true,
-        markers: true,
+        // markers: true,
       }
     });
 
-    const tl2 = gsap.timeline({
+    const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".cards-flip-container",
         start: "top 50%",
@@ -32,7 +32,7 @@ console.log(cards,innerCards)
       }
     });
 
-    tl2.from(cards[0], { autoAlpha: .5, yPercent: -200, scale:0, xPercent: 100, rotation: -20, duration: 5 })
+    tl.from(cards[0], { autoAlpha: .5, yPercent: -200, scale:0, xPercent: 100, rotation: -20, duration: 5 })
       .from(cards[1], { autoAlpha: .5, yPercent: -200,scale:0, duration: 5 }, "<.03")
       .from(cards[2], { autoAlpha: .5, yPercent: -200,scale:0, xPercent: -100, rotation: 20, duration: 5 }, "<.04")
       .to(innerCards[0], { rotationY: 180 }, ">")

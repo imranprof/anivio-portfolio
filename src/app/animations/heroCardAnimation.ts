@@ -21,8 +21,8 @@ export const heroCardAnimation = () => {
       }
     });
 
-    tl.to(".card1-anim", { xPercent: 20 })
-      .to(".card3-anim", { xPercent: -20 }, "<")
+    tl.to(".card1-anim", { xPercent: 50 })
+      .to(".card3-anim", { xPercent: -50 }, "<")
       .to(".card1-anim", { yPercent: 300, opacity: .5, rotation: -15, duration: 2 }, ">-.5")
       .to(".card2-anim", { yPercent: 300, opacity: .5, duration: 2 }, "<.07")
       .to(".card3-anim", { yPercent: 300, opacity: .5, rotation: 15, duration: 2 }, "<.07");

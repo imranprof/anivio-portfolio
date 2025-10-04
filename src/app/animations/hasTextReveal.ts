@@ -9,9 +9,9 @@ export const hasTextReveal = () => {
     const splitText = SplitText.create(text,{type: "lines, chars", mask: "lines", linesClass: "line"});
     gsap.set(".has-text-reveal", { opacity: 1 });
 
-    gsap.from(splitText.chars, {yPercent:-100, duration: .6,
+    gsap.from(splitText.chars, {yPercent:-100, duration: .7, ease:"power4",
       stagger: {
-        amount: .6,
+        amount: .7,
         from: "center"
     }
   })
