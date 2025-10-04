@@ -1,4 +1,9 @@
+"use client"
+import { useGSAP } from "@gsap/react"
 import { ServiceCard } from "./ServiceCard"
+import { serviceCardAnimation } from "@/app/animations/serviceCardAnimation"
+import { useRef } from "react"
+
 
 
 const services = [
@@ -49,25 +54,33 @@ const services = [
 ]
 
 export function Service() {
-  return (
-    <section className="container h-screen bg-stone-100 relative overflow-hidden">
-      {/* Header */}
-      <div className="absolute top-8 left-8 right-8 flex justify-between items-start z-10">
-        <h1 className="text-4xl font-bold text-foreground">Service</h1>
-        <p className="text-lg text-foreground max-w-md text-right font-medium">
-          Wenn alles gleich ist, ist es die größte Chance, anders zu sein.
-        </p>
-      </div>
+  const containerRef = useRef<HTMLDivElement>(null);
 
-      {/* Main Content - 3 Large Cards */}
-      <div className="h-full w-full flex items-center justify-center px-8 py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-9 w-full h-full ">
-          {services.map((service, index) => (
-            <ServiceCard
-              key={index}
-              {...service}
-            />
-          ))}
+  useGSAP(() => {
+    serviceCardAnimation();
+  }, { scope: containerRef })
+
+  return (
+    <section ref={containerRef} className="">
+      {/* Header */}
+      <div className="service-container  container h-screen bg-stone-100 relative overflow-hidden">
+        <div className="absolute top-8 left-8 right-8 flex justify-between items-start z-10">
+          <h1 className="text-4xl font-bold text-foreground">Service</h1>
+          <p className="text-lg text-foreground max-w-md text-right font-medium">
+            Wenn alles gleich ist, ist es die größte Chance, anders zu sein.
+          </p>
+        </div>
+
+        {/* Main Content - 3 Large Cards */}
+        <div className=" h-full w-full flex items-center justify-center px-8 py-20">
+          <div className="cards-flip-container grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-9 w-full h-full ">
+            {services.map((service, index) => (
+              <ServiceCard
+                key={index}
+                {...service}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>

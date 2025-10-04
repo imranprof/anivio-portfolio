@@ -15,18 +15,17 @@ type ServiceProps = {
 };
 
 export function ServiceCard({ id, title, icon, services, description }: ServiceProps) {
-  const [isFlipped, setIsFlipped] = useState(false)
+  // const [isFlipped, setIsFlipped] = useState(false)
 
   return (
     <div
-      className="relative h-full w-full cursor-pointer perspective-1000 max-w-[400px] max-h-[540px]"
-      onMouseEnter={() => setIsFlipped(true)}
-      onMouseLeave={() => setIsFlipped(false)}
+      className="flip-card relative h-full w-full cursor-pointer perspective-1000 max-w-[400px] max-h-[540px]"
+    // onMouseEnter={() => setIsFlipped(true)}
+    // onMouseLeave={() => setIsFlipped(false)}
     >
       <div
         className={cn(
-          "relative w-full h-full transition-transform duration-700 transform-style-preserve-3d",
-          isFlipped && "rotate-y-180",
+          "flip-card-inner relative w-full h-full transition-transform duration-700 transform-style-preserve-3d"
         )}
       >
         {/* Front Face */}
@@ -86,6 +85,6 @@ export function ServiceCard({ id, title, icon, services, description }: ServiceP
         </div>
 
       </div>
-    </div>
+    </div >
   )
 }

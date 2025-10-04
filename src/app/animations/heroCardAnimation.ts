@@ -1,6 +1,8 @@
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+gsap.registerPlugin(ScrollTrigger);
+
 export const heroCardAnimation = () => {
 
   const tlr = gsap.timeline({ repeat: -1, yoyo: true, repeatDelay: 0 });
