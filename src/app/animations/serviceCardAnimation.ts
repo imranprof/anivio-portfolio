@@ -37,9 +37,9 @@ console.log(cards,innerCards)
         scrub: true
       }
     });
-    gsap.set(cards[0], {scale:.4,xPercent: 100});
+    gsap.set(cards[0], {scale:.4,xPercent: 80});
     gsap.set(cards[1], {scale: .4});
-    gsap.set(cards[2], {scale:.4, xPercent: -100});
+    gsap.set(cards[2], {scale:.4, xPercent: -80});
 
     tl.from(cards[0], { yPercent: -100,rotation: -20, duration: 5 })
       .from(cards[1], { yPercent: -100,duration: 5 }, "<.2")
