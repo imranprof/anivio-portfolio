@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { Button } from "../ui/button"
 
 const Header = () => {
   return (
@@ -11,7 +12,9 @@ const Header = () => {
         <Link href={"#"} className="nav-menu-item"><span className="relative  z-[2]">About</span></Link>
         <Link href={"#"} className="nav-menu-item"><span className="relative  z-[2]">Contact</span></Link>
       </nav>
-      <div>Button</div>
+      <Button>
+        Say Hello
+      </Button>
 
     </header>
   )

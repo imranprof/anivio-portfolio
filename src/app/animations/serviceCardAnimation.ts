@@ -9,7 +9,12 @@ const cards = gsap.utils.toArray<HTMLElement>(".flip-card")
 const innerCards = gsap.utils.toArray<HTMLElement>(".flip-card-inner")
 
 console.log(cards,innerCards)
+  // continueous move animation
+    const tlr = gsap.timeline({ repeat: -1, yoyo: true, repeatDelay: 0 });
 
+    tlr.to(cards[0], { y: 15, duration: 1, ease: "none" })
+      .to(cards[1], { y: 15, duration: 1, ease: "none" }, "<.4")
+      .to(cards[2], { y: 15, duration: 1, ease: "none" }, "<-.4")
 
       //section 3 card animaiton
     gsap.timeline({
