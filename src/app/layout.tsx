@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Sofia_Sans_Condensed } from "next/font/google";
+import { Sofia_Sans_Condensed, Poppins } from "next/font/google";
 import "@/styles/globals.css"
 import 'lenis/dist/lenis.css'
 import Header from "@/components/layout/Header";
@@ -17,13 +17,19 @@ const sofia = Sofia_Sans_Condensed({
   variable: "--font-sofia-con",
 });
 
+const poppins = Poppins({
+  weight: ["300", "400", "500", "600", "700"],
+  subsets: ["latin"],
+  variable: "--font-poppin",
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={sofia.variable}>
+    <html lang="en" className={`${sofia.variable} ${poppins.variable}`}>
       <body>
         <LenisProviders>
           <Header />

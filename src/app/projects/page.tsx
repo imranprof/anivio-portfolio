@@ -1,8 +1,11 @@
+import ProjectHero from "@/components/sections/projects/ProjectHero"
 
 
 const Projects = () => {
   return (
-    <div>Projects</div>
+    <div>
+      <ProjectHero />
+    </div>
   )
 }
 

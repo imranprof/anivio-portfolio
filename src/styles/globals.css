@@ -8,6 +8,7 @@
 
 @theme {
   --font-sofia: var(--font-sofia-con), san-serif;
+  --font-poppin: var(--font-poppin), san-serif;
 }
 
 
@@ -137,8 +138,14 @@ body {
 }
 
 .container {
-  @apply my-0 mx-auto py-0 sm:px-[15px] 2xl:max-w-[1800px];
+  @apply my-0 mx-auto py-0 sm:px-[20px] max-w-[calc(100vw-40px)] xl:max-w-[1350px] 2xl:max-w-[1850px];
 }
+
+.inner-container {
+  @apply max-w-[calc(100vw-60px)] xl:max-w-[1250px] 2xl:max-w-[1750px];
+}
+
+
 
 
 /* for service card section */
