@@ -8,12 +8,12 @@ const Header = () => {
       <nav className="flex gap-4 font-medium font-sofia text-xl">
         <Link href={"#"} className="nav-menu-item"><span className="relative  z-[2]">
           Service</span></Link>
-        <Link href={"#"} className="nav-menu-item"><span className="relative  z-[2]">Project</span></Link>
+        <Link href={"/projects"} className="nav-menu-item"><span className="relative  z-[2]">Projects</span></Link>
         <Link href={"#"} className="nav-menu-item"><span className="relative  z-[2]">About</span></Link>
         <Link href={"#"} className="nav-menu-item"><span className="relative  z-[2]">Contact</span></Link>
       </nav>
       <Button>
-        Say Hello
+        Lets's Talk
       </Button>
 
     </header>

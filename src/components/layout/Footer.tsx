@@ -130,7 +130,7 @@ export function Footer() {
       <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 text-sm uppercase">
         {/* Left: Copyright */}
         <div className="flex items-center gap-3">
-          <span>©2025 Eduard Bodak</span>
+          <span>©2025 Anivio</span>
           <span className="text-[#d4ff00]">✦</span>
           <span className="text-xs text-gray-500">Y2K Design</span>
         </div>
@@ -138,7 +138,7 @@ export function Footer() {
         {/* Center: Time & Location */}
         <div className="flex items-center gap-3">
           <span className="text-[#d4ff00]">✦</span>
-          <span>{currentTime ? currentTime : "00:00"} Cologne</span>
+          <span>{currentTime ? currentTime : "00:00"} Dhaka</span>
           <span className="text-[#d4ff00]">✦</span>
         </div>
 
