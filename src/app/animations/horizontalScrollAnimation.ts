@@ -20,7 +20,7 @@ export const horizontalScrollAnimation = () => {
 
       triggers.forEach((trigger) => {
         const heading = trigger.querySelector<HTMLElement>(".has-horizontal-scroll");
-        // const footerContainer = document.querySelector<HTMLElement>(".footer-container");
+
         if (!heading) return;
 
         const headingWidth = heading.scrollWidth;
@@ -30,25 +30,32 @@ export const horizontalScrollAnimation = () => {
 
         // Responsive values
         const yStart = conditions?.isMobile ? 100 : 150;
-        const yEnd = conditions?.isMobile ? 200 : 400;
+        const yEnd = conditions?.isMobile ? 200 : -200;
         const charyStart = -60;
+
+        function getScrollAmount() {
+          let scrollWidth = headingWidth;
+          return -(scrollWidth - window.innerWidth);
+        }
 
         // Initial setup
         gsap.set(heading, {
-          y: yStart,
-          x: windowWidth-100
+          // y: yStart,
+          x: windowWidth
         });
 
         // Horizontal scroll movement
         gsap.to(heading, {
-          x: () => -(headingWidth - window.innerWidth),
+          x: getScrollAmount,
           y: yEnd,
           ease: "none",
           scrollTrigger: {
             trigger,
             start: "top 70%",
-            end: "+=" + (headingWidth - windowWidth + windowHeight * 0.35),
+            end: () => `+=${getScrollAmount() * -1}`,
             scrub: true,
+            invalidateOnRefresh: true,
+            pin:true
             // markers: true
           },
         });
@@ -71,22 +78,11 @@ export const horizontalScrollAnimation = () => {
           duration: 2.5,
           scrollTrigger: {
             trigger,
-            start: "top 77%",
-            end: "+=" + (headingWidth - windowWidth + 200),
+            start: "top 75%",
+            end: "+=" + (headingWidth - windowWidth + windowHeight * 0.35),
             scrub: true,
           },
         });
-
-        // const tl = gsap.timeline({
-        //   scrollTrigger: {
-        //     trigger: footerContainer, 
-        //     start: "bottom bottom",
-        //     end: "+=" + (windowWidth),
-        //     pin: true,
-        //     pinSpacing: true,
-        //     markers: true
-        //   }
-        // })
         
 
       });
