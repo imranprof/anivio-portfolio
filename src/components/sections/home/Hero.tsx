@@ -16,9 +16,9 @@ const Hero = () => {
   return (
     <section ref={containerRef} className="py-[clamp(20px,5vw,45px)]">
       <h1 className="has-text-reveal font-sofia text-[clamp(64px,15vw,300px)] uppercase font-bold text-center" data-duration=".7" data-stagger="0.7">
-        Infinite Motion
+        Code in Motion
       </h1>
-      <div className="card-container card_section py-[clamp(20px,5vw,60px)]">
+      <div className="card-container card_section py-[clamp(10px,5vw,50px)]">
         <div className="flex items-center justify-center gap-4">
           <div className="card1-anim z-[1] card1 h-[182px] w-[132px] bg-purple-200 rounded-xl">
             <div className="wrapper w-full h-full px-[12px] py-[8px] flex flex-col justify-between">

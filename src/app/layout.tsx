@@ -30,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${sofia.variable} ${poppins.variable}`}>
-      <body>
+      <body className="bg-stone-100">
         <LenisProviders>
           <Header />
           {children}
