@@ -29,7 +29,7 @@ export const horizontalScrollAnimation = () => {
         const windowHeight = window.innerHeight;
 
         // Responsive values
-        const yStart = conditions?.isMobile ? 100 : 150;
+        const yStart = conditions?.isMobile ? 100 : -150;
         const yEnd = conditions?.isMobile ? 200 : -200;
         const charyStart = -60;
 
@@ -40,7 +40,7 @@ export const horizontalScrollAnimation = () => {
 
         // Initial setup
         gsap.set(heading, {
-          // y: yStart,
+          y: yStart,
           x: windowWidth
         });
 

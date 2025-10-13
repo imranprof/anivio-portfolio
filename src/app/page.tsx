@@ -9,7 +9,7 @@ import { Service } from "@/components/sections/home/service/Service";
 
 export default function Home() {
   return (
-    <main>
+    <main className="bg-stone-100">
       <Hero />
       <About />
       <Service />
