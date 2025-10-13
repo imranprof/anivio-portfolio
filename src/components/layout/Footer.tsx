@@ -27,7 +27,7 @@ export function Footer() {
   }
 
   return (
-    <footer className="bg-black text-white min-h-[50vh] flex flex-col justify-between p-8 md:p-12 lg:p-16 font-mono">
+    <footer className="footer-container bg-black text-white min-h-[50vh] flex flex-col justify-between p-8 md:p-12 lg:p-16 font-mono">
       {/* Top Section */}
       <div className="flex flex-col lg:flex-row justify-between gap-12">
         {/* Left: CTA Buttons */}
