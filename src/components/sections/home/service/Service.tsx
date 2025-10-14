@@ -67,13 +67,13 @@ export function Service() {
         <div className="absolute top-8 left-8 right-8 flex justify-between items-start z-10">
           <h1 className="text-4xl font-bold text-foreground">Service</h1>
           <p className="text-lg text-foreground max-w-md text-right font-medium">
-            Wenn alles gleich ist, ist es die größte Chance, anders zu sein.
+            When everything is the same, it is the greatest opportunity to be different.
           </p>
         </div>
 
         {/* Main Content - 3 Large Cards */}
-        <div className=" h-full w-full flex items-center justify-center px-8 py-20">
-          <div className="cards-flip-container grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-9 w-full h-full ">
+        <div className=" h-full w-full flex items-center justify-center px-8 py-20 mt-10">
+          <div className="cards-flip-container grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-9 w-full h-full items-center">
             {services.map((service, index) => (
               <ServiceCard
                 key={index}

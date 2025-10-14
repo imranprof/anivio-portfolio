@@ -37,17 +37,20 @@ console.log(cards,innerCards)
         scrub: true
       }
     });
-    gsap.set(cards[0], {scale:.4,xPercent: 120});
+    gsap.set(cards[0], {scale:.4,xPercent: 120, rotation: -10});
     gsap.set(cards[1], {scale: .4});
-    gsap.set(cards[2], {scale:.4, xPercent: -120});
+    gsap.set(cards[2], {scale:.4, xPercent: -120, rotation: 15});
 
-    tl.from(cards[0], { yPercent: -100,rotation: -20, duration: 5 })
-      .from(cards[1], { yPercent: -100,duration: 5 }, "<.2")
-      .from(cards[2], { yPercent: -100,rotation: 20, duration: 5 }, "<.3")
+    tl.from(cards[0], { yPercent: -125, duration: 5 })
+      .from(cards[1], { yPercent: -125,duration: 5 }, "<.2")
+      .from(cards[2], { yPercent: -125, duration: 5 }, "<.3")
 
       .to(cards[0], { scale: 1, duration: 5 }, "<2")
       .to(cards[1], { scale: 1, duration: 5 }, "<")
       .to(cards[2], { scale: 1, duration: 5 }, "<")
+
+      .to(cards[0], {rotation:0, duration: 3 }, )
+      .to(cards[2], {rotation:0, duration: 3 }, "<")
 
       .to(cards[0], {xPercent:0, duration: 3 }, )
       .to(cards[2], {xPercent:0, duration: 3 }, "<")
