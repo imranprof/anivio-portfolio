@@ -10,7 +10,7 @@ const Header = () => {
           Service</span></Link>
         <Link href={"/projects"} className="nav-menu-item"><span className="relative  z-[2]">Projects</span></Link>
         <Link href={"#"} className="nav-menu-item"><span className="relative  z-[2]">About</span></Link>
-        <Link href={"#"} className="nav-menu-item"><span className="relative  z-[2]">Contact</span></Link>
+        <Link href={"/contact"} className="nav-menu-item"><span className="relative  z-[2]">Contact</span></Link>
       </nav>
       <Button>
         Lets's Talk
