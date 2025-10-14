@@ -142,7 +142,7 @@ body {
 }
 
 .inner-container {
-  @apply max-w-[calc(100vw-60px)] xl:max-w-[1250px] 2xl:max-w-[1600px];
+  @apply max-w-[calc(100vw-60px)] xl:max-w-[1250px] 2xl:max-w-[1500px];
 }
 
 
