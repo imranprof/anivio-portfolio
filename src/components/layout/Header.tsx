@@ -1,10 +1,17 @@
+"use client"
+
 import Link from "next/link"
 import { Button } from "../ui/button"
+import { usePathname } from "next/navigation";
+import { cn } from "@/lib/utils";
 
 const Header = () => {
+
+  const pathname = usePathname();
+
   return (
-    <header className="h-[120px] w-full flex  items-center justify-between px-4 mx-auto">
-      <Link className="text-3xl font-sofia uppercase font-bold" href={"/"}>AniVio</Link>
+    <header className={cn("h-[120px] w-full flex  items-center justify-between px-4 mx-auto", pathname === "/projects" && "bg-black")}>
+      <Link className={cn("text-3xl font-sofia uppercase font-bold", pathname === "/projects" && "text-white")} href={"/"}>AniVio</Link>
       <nav className="flex gap-4 font-medium font-poppin text-[16px]">
         <Link href={"/"} className="nav-menu-item"><span className="relative  z-[2]">
           Service</span></Link>

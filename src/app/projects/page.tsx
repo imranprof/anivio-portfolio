@@ -3,7 +3,7 @@ import ProjectHero from "@/components/sections/projects/ProjectHero"
 
 const Projects = () => {
   return (
-    <div>
+    <div className="bg-black text-white">
       <ProjectHero />
     </div>
   )

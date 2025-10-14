@@ -23,7 +23,7 @@ const ProjectHero = () => {
           </h1>
           <span className="text-[18px] font-medium text-primary/80">Animation</span>
         </div>
-        <p className="text-[24px] lg:max-w-[450px] xl:max-w-[500px] font-medium text-center lg:absolute lg:bottom-0 lg:-translate-y-1/2">Designing digital experiences that leave a lasting impression</p>
+        <p className="text-[24px] lg:max-w-[450px] xl:max-w-[500px] font-medium text-center lg:absolute lg:bottom-0 lg:-translate-y-1/2">Designing digital experiences that <br /><span className="font-sofia font-semibold">leave a lasting impression</span></p>
       </div>
       <div className="hero_bottom text-center flex justify-between inner-container">
         <div className="flex justify-between items-center text-[18px] font-medium"> <ArrowDown className="pe-5 text-black h-10 w-10" /> Scroll To Explore </div>
