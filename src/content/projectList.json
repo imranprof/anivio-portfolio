@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Portfolio Website",
+    "main_img": "/imgs/projects/02hero.jpg",
+    "thumb_img": "/imgs/projects/02hero1.jpg",
+    "year": 2025,
+    "tag": "Web Development",
+    "slug": "portfolio-website"
+  },
+  {
+    "id": 2,
+    "title": "Animation Addons",
+    "main_img": "/imgs/projects/01hero.jpg",
+    "thumb_img": "/imgs/projects/01hero1.jpg",
+    "year": 2025,
+    "tag": "Web Animation",
+    "slug": "animation-addons"
+  },
+  {
+    "id": 3,
+    "title": "E-commerce Store",
+    "main_img": "/imgs/projects/07hero.jpg",
+    "thumb_img": "/imgs/projects/07hero1.jpg",
+    "year": 2024,
+    "tag": "React / Next.js",
+    "slug": "ecommerce-store"
+  },
+  {
+    "id": 4,
+    "title": "Blog Platform",
+    "main_img": "/imgs/projects/06hero.jpg",
+    "thumb_img": "/imgs/projects/06hero1.jpg",
+    "year": 2023,
+    "tag": "Full Stack",
+    "slug": "blog-platform"
+  }
+]
