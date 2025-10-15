@@ -1,5 +1,8 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
+import gsap from "gsap";
+
 
 
 type projectProps = {
@@ -26,7 +29,7 @@ const ProjectCard = ({ data }: projectProps) => {
           className="w-full h-full object-cover" />
       </div>
 
-      <div className="inside_img_thumb w-[40%] h-auto absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <div className="inside_img_thumb w-[40%] overflow-hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
         <Image src={thumb_img}
           alt="thumb"
           width={1000}

@@ -1,10 +1,10 @@
 import projectsData from "@/content/projects.json"
 
-interface ProjectPageProps {
+type PageProps = {
   params: {
     slug: string;
   };
-}
+};
 
 interface Project {
   slug: string;
@@ -20,7 +20,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function ProjectPage({ params }: ProjectPageProps) {
+export default function ProjectPage({ params }: PageProps) {
   const project = (projectsData as Project[]).find(
     (p) => p.slug === params.slug
   );
