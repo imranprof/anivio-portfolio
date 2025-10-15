@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "portfolio-anivio",
+    "title": "Portfolio Anivio",
+    "description": "A modern portfolio built with Next.js and Tailwind CSS.",
+    "image": "/images/portfolio.jpg"
+  },
+  {
+    "slug": "animation-addons",
+    "title": "Animation Addons Landing",
+    "description": "A landing page showcasing smooth GSAP animations.",
+    "image": "/images/animation.jpg"
+  },
+  {
+    "slug": "creative-showcase",
+    "title": "Creative Showcase",
+    "description": "A showcase of GSAP-powered animation effects.",
+    "image": "/images/showcase.jpg"
+  }
+]
