@@ -1,10 +1,5 @@
 import projectsData from "@/content/projects.json"
 
-type PageProps = {
-  params: {
-    slug: string;
-  };
-};
 
 interface Project {
   slug: string;
@@ -20,9 +15,11 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function ProjectPage({ params }: PageProps) {
-  const project = (projectsData as Project[]).find(
-    (p) => p.slug === params.slug
+export default async function ProjectPage({ params }: { params: any }) {
+  console.log(params)
+  const resolvedParams = await params;
+  const project = projectsData.find(
+    (p) => p.slug === resolvedParams.slug
   );
 
   if (!project) {
