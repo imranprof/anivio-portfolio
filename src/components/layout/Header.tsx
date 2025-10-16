@@ -28,7 +28,7 @@ const Header = () => {
   return (
     <header ref={containerRef} className={cn("h-[120px] w-full flex  items-center justify-between px-4 container", pathname === "/projects" && "bg-black")}>
       <Link className={cn("text-3xl font-sofia uppercase font-bold", pathname === "/projects" && "text-white")} href={"/"}>AniVio</Link>
-      <nav className="flex gap-4 font-medium font-poppin text-[16px]">
+      <nav className="flex gap-4 font-medium font-poppin text-[14px]">
         {
           navItems.map(({ href, label }) => (
             <Link key={href} href={href} className={cn("nav-menu-item", pathname === href &&
