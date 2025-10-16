@@ -15,7 +15,7 @@ const Hero = () => {
 
   return (
     <section ref={containerRef} className="py-[clamp(20px,5vw,45px)]">
-      <h1 className="has-text-reveal font-sofia text-[clamp(64px,15vw,300px)] uppercase font-bold text-center" data-duration=".7" data-stagger="0.7">
+      <h1 className="has-text-reveal font-sofia text-[clamp(64px,15vw,300px)] uppercase font-bold text-center">
         Code in Motion
       </h1>
       <div className="card-container card_section py-[clamp(10px,5vw,50px)]">
