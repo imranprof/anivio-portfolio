@@ -51,10 +51,10 @@ const ProjectCard = ({ data }: projectProps) => {
         <div className="description">
           <div className="date absolute top-[5%] left-[5%] bg-black rounded-md py-1 px-2 font-sofia text-[14px] opacity-0 group-hover:opacity-100 transition-all duration-300">{year}</div>
           <div className="absolute top-1/2 flex justify-between w-full px-[20px]">
-            <div className="title ">
+            <div className="has-scramble opacity-0 title text-[25px] font-sofia" data-text={title}>
               {title}
             </div>
-            <div className="tag">{tag}</div>
+            <div className="has-scramble opacity-0 tag text-[25px] font-sofia" data-text={tag}>{tag}</div>
           </div>
         </div>
 
