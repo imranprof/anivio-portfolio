@@ -28,11 +28,11 @@
   },
   {
     "id": 4,
-    "title": "Blog Platform",
+    "title": "Demo Project",
     "main_img": "/imgs/projects/06hero.jpg",
     "thumb_img": "/imgs/projects/06hero1.jpg",
     "year": 2023,
-    "tag": "Full Stack",
+    "tag": "Demo View",
     "slug": "blog-platform"
   }
 ]
