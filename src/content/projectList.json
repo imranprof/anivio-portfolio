@@ -19,12 +19,12 @@
   },
   {
     "id": 3,
-    "title": "E-commerce Store",
+    "title": "Arolax Agency",
     "main_img": "/imgs/projects/07hero.jpg",
     "thumb_img": "/imgs/projects/07hero1.jpg",
     "year": 2024,
     "tag": "React / Next.js",
-    "slug": "ecommerce-store"
+    "slug": "arolax-agency"
   },
   {
     "id": 4,

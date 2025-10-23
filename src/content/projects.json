@@ -1,20 +1,46 @@
 [
   {
-    "slug": "portfolio-anivio",
-    "title": "Portfolio Anivio",
+    "slug": "anivio-portfolio",
+    "title": "Anivio Portfolio",
     "description": "A modern portfolio built with Next.js and Tailwind CSS.",
-    "image": "/images/portfolio.jpg"
+    "main_img": "/imgs/projects/02hero.jpg",
+    "thumb_img": "/imgs/projects/02hero1.jpg",
+    "year": 2025,
+    "tag": "GSAP & Three.js",
+    "techs": "Nextjs, GSAP, THREE.js, Tailwind CSS & ShadcnUi",
+    "live_link": "https://anivio-portfolio.vercel.app/"
   },
   {
     "slug": "animation-addons",
     "title": "Animation Addons Landing",
     "description": "A landing page showcasing smooth GSAP animations.",
-    "image": "/images/animation.jpg"
+    "main_img": "/imgs/projects/01hero.jpg",
+    "thumb_img": "/imgs/projects/01hero1.jpg",
+    "year": 2025,
+    "tag": "Web Animation",
+    "techs": "HTML, CSS & GSAP",
+    "live_link": "https://animation-addons.com/"
   },
   {
-    "slug": "creative-showcase",
-    "title": "Creative Showcase",
+    "slug": "arolax-agency",
+    "title": "E-commerce Store",
     "description": "A showcase of GSAP-powered animation effects.",
-    "image": "/images/showcase.jpg"
+    "main_img": "/imgs/projects/07hero.jpg",
+    "thumb_img": "/imgs/projects/07hero1.jpg",
+    "year": 2024,
+    "tag": "React / Next.js",
+    "techs": "Nextjs, GSAP, Tailwind CSS & ShadcnUi",
+    "live_link": "https://preview.themeforest.net/item/arolax-creative-digital-agency-react-nextjs-template/full_screen_preview/58596468"
+  },
+  {
+    "slug": "blog-platform",
+    "title": "Blog Platform",
+    "description": "A showcase of GSAP-powered animation effects.",
+    "main_img": "/imgs/projects/06hero.jpg",
+    "thumb_img": "/imgs/projects/06hero1.jpg",
+    "year": 2023,
+    "tag": "Full Stack",
+    "techs": "Nextjs & ShadcnUi",
+    "live_link": "https://anivio-portfolio.vercel.app/"
   }
 ]
