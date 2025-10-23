@@ -2,7 +2,7 @@
   {
     "slug": "anivio-portfolio",
     "title": "Anivio Portfolio",
-    "description": "A modern portfolio built with Next.js and Tailwind CSS.",
+    "description": "Anivio Portfolio is a visually immersive and interactive portfolio website crafted with Next.js, GSAP, and Three.js. It blends visuals with smooth scroll-based animations to create a dynamic storytelling experience. The design emphasizes performance, motion fluidity, and modern aesthetics—showcasing both technical expertise and creative presentation in a seamless, responsive interface.",
     "main_img": "/imgs/projects/02hero.jpg",
     "thumb_img": "/imgs/projects/02hero1.jpg",
     "year": 2025,
@@ -13,7 +13,7 @@
   {
     "slug": "animation-addons",
     "title": "Animation Addons Landing",
-    "description": "A landing page showcasing smooth GSAP animations.",
+    "description": "Animation Addons Landing is a modern, visually engaging landing page designed to highlight the power of smooth motion and interactivity. Built with GSAP, it features fluid transitions, subtle parallax effects, and responsive layouts that create a dynamic user experience. The project focuses on delivering seamless performance while showcasing creative animation techniques for web interfaces.",
     "main_img": "/imgs/projects/01hero.jpg",
     "thumb_img": "/imgs/projects/01hero1.jpg",
     "year": 2025,
@@ -23,8 +23,8 @@
   },
   {
     "slug": "arolax-agency",
-    "title": "E-commerce Store",
-    "description": "A showcase of GSAP-powered animation effects.",
+    "title": "Arolax Agency",
+    "description": "A versatile, responsive, and customizable digital agency portfolio theme with 20+ homepages and dynamic animations. Ideal for agencies, startups, and portfolios.",
     "main_img": "/imgs/projects/07hero.jpg",
     "thumb_img": "/imgs/projects/07hero1.jpg",
     "year": 2024,
@@ -34,12 +34,12 @@
   },
   {
     "slug": "blog-platform",
-    "title": "Blog Platform",
+    "title": "Demo Project",
     "description": "A showcase of GSAP-powered animation effects.",
     "main_img": "/imgs/projects/06hero.jpg",
     "thumb_img": "/imgs/projects/06hero1.jpg",
     "year": 2023,
-    "tag": "Full Stack",
+    "tag": "Demo Project",
     "techs": "Nextjs & ShadcnUi",
     "live_link": "https://anivio-portfolio.vercel.app/"
   }
