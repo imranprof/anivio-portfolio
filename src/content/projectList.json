@@ -1,12 +1,12 @@
 [
   {
     "id": 1,
-    "title": "Portfolio Website",
+    "title": "Anivio Portfolio",
     "main_img": "/imgs/projects/02hero.jpg",
     "thumb_img": "/imgs/projects/02hero1.jpg",
     "year": 2025,
-    "tag": "Web Development",
-    "slug": "portfolio-website"
+    "tag": "GSAP & Three.js",
+    "slug": "anivio-portfolio"
   },
   {
     "id": 2,
