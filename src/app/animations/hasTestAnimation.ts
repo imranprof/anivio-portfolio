@@ -27,7 +27,7 @@ export const hasTestAnimation = () =>{
     x: i % 2 === 0 ? -1000 : 1000, // alternate direction
     // opacity: 0,
     autoAlpha: 0,
-    duration: 1,
+    duration: 3,
     ease: "power3.out",
   });
 });
