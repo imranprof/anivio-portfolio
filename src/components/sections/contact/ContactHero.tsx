@@ -27,7 +27,7 @@ const ContactHero = () => {
       </div>
       <div className="hero_bottom text-center flex justify-between inner-container w-full mx-auto">
         <div className="flex justify-between items-center text-[18px] font-medium"> <ArrowDown className="pe-5 text-black h-10 w-10" /> Scroll To Explore </div>
-        <div className="text-[18px] font-semibold font-poppin flex items-center">Anivio@example.com</div>
+        <div className="text-[18px] font-semibold font-poppin flex items-center">Imranpers@gmail.com</div>
       </div>
     </section>
   )
