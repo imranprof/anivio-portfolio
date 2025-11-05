@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div className="pb-5">
       <ContactHero />
-      <ContactForm />
+      {/* <ContactForm /> */}
       <ContactAniTest />
     </div>
   )
