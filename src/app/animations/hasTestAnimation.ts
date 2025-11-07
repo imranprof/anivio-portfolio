@@ -5,7 +5,8 @@ gsap.registerPlugin(ScrollTrigger)
 
 export const hasTestAnimation = () =>{
   const mapContainer = document.querySelector<HTMLElement>("#svgContainer")
-  const allParts = gsap.utils.toArray<SVGElement>("path ", mapContainer);
+  // const allParts = gsap.utils.toArray<SVGElement>("g ", mapContainer);
+  const allParts = gsap.utils.toArray<SVGElement>("g[id^='Group']", mapContainer);
 
   console.log(allParts)
 
