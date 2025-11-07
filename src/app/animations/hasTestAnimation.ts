@@ -7,6 +7,7 @@ export const hasTestAnimation = () =>{
   const mapContainer = document.querySelector<HTMLElement>("#svgContainer")
   // const allParts = gsap.utils.toArray<SVGElement>("g ", mapContainer);
   const allParts = gsap.utils.toArray<SVGElement>("g[id^='Group']", mapContainer);
+  const allTexts = gsap.utils.toArray<SVGElement>("g[id^='GTitle']", mapContainer);
 
   console.log(allParts)
 
@@ -39,6 +40,13 @@ const tl = gsap.timeline({
     duration: 3,
     ease: "power3.out",
   });
+});
+
+  allTexts.forEach((text, i) => {
+  tl.to(text, {
+    autoAlpha: 0,
+    duration: 0.5,
+  }, i===0 ? ">":"<");
 });
 
 
