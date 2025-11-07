@@ -26,7 +26,7 @@ const tl = gsap.timeline({
   scrollTrigger: {
     trigger: mapContainer,
     start: "top 50%", // animation starts when top hits 50%
-    end: "+=500px",
+    end: "+=600px",
     scrub: true,
     // markers: true,
   },
@@ -46,7 +46,7 @@ const tl = gsap.timeline({
   tl.to(text, {
     autoAlpha: 0,
     duration: 0.5,
-  }, i===0 ? ">":"<");
+  }, );
 });
 
 
