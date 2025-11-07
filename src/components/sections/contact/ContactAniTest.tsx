@@ -11,7 +11,7 @@ const ContactAniTest = () => {
   return (
     <div id="svgContainer" className="h-screen container flex justify-center items-center pt-[200px] svg-container">
       <div className="w-[40%] h-auto">
-        <svg width="100%" height="100%" viewBox="0 0 799 813" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="overflow-visible" width="100%" height="100%" viewBox="0 0 799 813" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g id="mainGroup 252">
             <path id="Vector" d="M599 311.159L618.01 258.889L614.4 268.809L599 311.159Z" fill="white" stroke="#220F0B" />
             <path id="Vector_2" d="M426.359 364.508L433.129 421.538L462.599 353.578C462.599 353.578 473.949 337.168 491.249 322.028C504.399 310.518 520.989 299.748 538.639 297.498L527.589 275.398L484.699 291.078L426.359 364.508Z" fill="#8A1C15" stroke="#220F0B" />

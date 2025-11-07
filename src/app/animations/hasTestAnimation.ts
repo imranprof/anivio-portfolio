@@ -15,7 +15,7 @@ export const hasTestAnimation = () =>{
 ScrollTrigger.create({
   trigger: mapContainer,
   start: "top top", // pin starts when top hits 10%
-  end: "+=300px",
+  end: "+=1700px",
   pin: true,
   // markers: true,
   scrub: true,
@@ -26,7 +26,7 @@ const tl = gsap.timeline({
   scrollTrigger: {
     trigger: mapContainer,
     start: "top 50%", // animation starts when top hits 50%
-    end: "+=600px",
+    end: "+=2000px",
     scrub: true,
     // markers: true,
   },
@@ -36,9 +36,9 @@ const tl = gsap.timeline({
   tl.from(part, {
     x: i % 2 === 0 ? -1000 : 1000, // alternate direction
     // opacity: 0,
-    autoAlpha: 0,
+    // autoAlpha: 0,
     duration: 3,
-    ease: "power3.out",
+    ease: "power1",
   });
 });
 
