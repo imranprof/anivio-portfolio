@@ -15,7 +15,7 @@ export const hasTestAnimation = () =>{
 ScrollTrigger.create({
   trigger: mapContainer,
   start: "top top", // pin starts when top hits 10%
-  end: "+=1700px",
+  end: "+=900px",
   pin: true,
   // markers: true,
   scrub: true,
@@ -26,28 +26,42 @@ const tl = gsap.timeline({
   scrollTrigger: {
     trigger: mapContainer,
     start: "top 50%", // animation starts when top hits 50%
-    end: "+=2000px",
+    end: "+=1200px",
     scrub: true,
     // markers: true,
   },
 });
 
-  allParts.forEach((part, i) => {
-  tl.from(part, {
-    x: i % 2 === 0 ? -1000 : 1000, // alternate direction
-    // opacity: 0,
-    // autoAlpha: 0,
-    duration: 3,
-    ease: "power1",
-  });
+//   allParts.forEach((part, i) => {
+//   tl.from(part, {
+//     x: i % 2 === 0 ? -800 : 800, // alternate direction
+//     // opacity: 0,
+//     // autoAlpha: 0,
+//     duration: 5,
+//     ease: "power1",
+//   });
+// });
+
+tl.from(allParts, {
+  x: i => i % 2 === 0 ? -800 : 800,
+  duration: 5,
+  ease: "power1",
+  stagger: 0.8 // pairs animate at the same time
 });
 
-  allTexts.forEach((text, i) => {
-  tl.to(text, {
+//   allTexts.forEach((text, i) => {
+//   tl.to(text, {
+//     autoAlpha: 0,
+//     duration: 0.5,
+//   }, );
+// });
+
+  tl.to(allTexts, {
     autoAlpha: 0,
     duration: 0.5,
+    stagger: 0.05,
+    ease: "expo"
   }, );
-});
 
 
 
