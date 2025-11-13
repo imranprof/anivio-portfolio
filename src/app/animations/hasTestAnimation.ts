@@ -45,10 +45,10 @@ export const hasTestAnimation = () => {
       },
       y: i => {
         const group = i % 4;
-        if (group === 0) return "-800"; // left-top
-        if (group === 1) return "-800"; // right-top
-        if (group === 2) return "800";  // left-bottom
-        return "800";                   // right-bottom
+        if (group === 0) return "-1100"; // left-top
+        if (group === 1) return "-1100"; // right-top
+        if (group === 2) return "1100";  // left-bottom
+        return "1100";                   // right-bottom
       },
       duration: 5,
       ease: "power1.inOut",
