@@ -8,6 +8,8 @@ export const hasTestAnimation = () => {
 
   const topContainer = document.querySelector<SVGAElement>("#GTop");
   const topParts = gsap.utils.toArray<SVGElement>("[id^='Group']", topContainer);
+  const bottomContainer = document.querySelector<SVGAElement>("#GBottom");
+  const bottomParts = gsap.utils.toArray<SVGElement>("[id^='Group']", bottomContainer);
 
   // const allParts = gsap.utils.toArray<SVGElement>("[id^='Group']", topContainer);
 
@@ -24,7 +26,7 @@ export const hasTestAnimation = () => {
     ScrollTrigger.create({
       trigger: mapContainer,
       start: "top top",
-      end: "+=1100px",
+      end: "+=700px",
       pin: true,
       // markers: true,
       scrub: true,
@@ -33,8 +35,8 @@ export const hasTestAnimation = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: mapContainer,
-        start: "top 70%",
-        end: "+=1600px",
+        start: "top 80%",
+        end: "+=1200px",
         scrub: true,
         // markers: true,
       },
@@ -45,7 +47,13 @@ export const hasTestAnimation = () => {
       y: -800,
       duration: 5,
       stagger: .5
-    })
+    }, 0)
+    tl.from(bottomParts, {
+      x: i => i % 2 === 0 ? 800 : -800,
+      y: 1000,
+      duration: 5,
+      stagger: .5
+    }, 12)
 
     // tl.from(allParts, {
     //   x: i => {
