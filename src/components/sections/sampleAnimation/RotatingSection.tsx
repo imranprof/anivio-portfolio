@@ -2,7 +2,7 @@
 
 const RotatingSection = () => {
   return (
-    <section className="w-full h-[1016px] flex justify-center relative overflow-hidden">
+    <section id="rotateParentContainer" className=" w-full h-[1016px] flex justify-center relative overflow-hidden">
       <div className="w-full h-full flex flex-col justify-between items-center py-[120px]">
         <h2 className="text-[64px] font-medium">Your Path to Personalized Precision</h2>
         <div className="step-card-container w-[318px] h-[276px] relative">

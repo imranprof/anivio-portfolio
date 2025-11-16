@@ -4,17 +4,17 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 gsap.registerPlugin(ScrollTrigger)
 
 export const hasTestAnimation = () => {
-  const mapContainer = document.querySelector<HTMLElement>("#svgContainer")
+  const mapContainer = document.querySelector("#svgContainer")
 
-  const topContainer = document.querySelector<SVGAElement>("#GTop");
-  const topParts = gsap.utils.toArray<SVGElement>("[id^='Group']", topContainer);
-  const bottomContainer = document.querySelector<SVGAElement>("#GBottom");
-  const bottomParts = gsap.utils.toArray<SVGElement>("[id^='Group']", bottomContainer);
+  const topContainer = document.querySelector("#GTop");
+  const topParts = gsap.utils.toArray("[id^='Group']", topContainer);
+  const bottomContainer = document.querySelector("#GBottom");
+  const bottomParts = gsap.utils.toArray("[id^='Group']", bottomContainer);
 
   // const allParts = gsap.utils.toArray<SVGElement>("[id^='Group']", topContainer);
 
   // const allParts = gsap.utils.toArray<SVGElement>("[id^='Group']", mapContainer);
-  const allTexts = gsap.utils.toArray<SVGElement>("g[id^='GTitle']", mapContainer);
+  const allTexts = gsap.utils.toArray("g[id^='GTitle']", mapContainer);
 
   // console.log(allParts)
   // console.log("parts-- ", allParts.length)
@@ -26,7 +26,7 @@ export const hasTestAnimation = () => {
     ScrollTrigger.create({
       trigger: mapContainer,
       start: "top top",
-      end: "+=900px",
+      end: "+=1500px",
       pin: true,
       // markers: true,
       scrub: true,
@@ -36,7 +36,7 @@ export const hasTestAnimation = () => {
       scrollTrigger: {
         trigger: mapContainer,
         start: "top 80%",
-        end: "+=1500px",
+        end: "+=2000px",
         scrub: true,
         // markers: true,
       },
