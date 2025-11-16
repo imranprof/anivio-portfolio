@@ -1,3 +1,12 @@
 .has-text-reveal {
   opacity: 0;
 }
+
+#rotatingContainer {
+  transition: transform .6s cubic-bezier(.445, .05, .55, .95);
+  /* transition: transform 1s; */
+}
+
+.step-card {
+  transition: opacity .45s;
+}
