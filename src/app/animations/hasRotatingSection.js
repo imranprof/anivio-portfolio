@@ -62,7 +62,7 @@ export const hasRotatingSections = () => {
 
     //
   }
-  tl.to({}, { duration: 1 });
+  tl.to({}, { duration: 0.3 });
 
   //
 };
