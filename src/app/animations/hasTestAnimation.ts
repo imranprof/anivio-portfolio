@@ -26,7 +26,7 @@ export const hasTestAnimation = () => {
     ScrollTrigger.create({
       trigger: mapContainer,
       start: "top top",
-      end: "+=700px",
+      end: "+=900px",
       pin: true,
       // markers: true,
       scrub: true,
@@ -36,7 +36,7 @@ export const hasTestAnimation = () => {
       scrollTrigger: {
         trigger: mapContainer,
         start: "top 80%",
-        end: "+=1200px",
+        end: "+=1500px",
         scrub: true,
         // markers: true,
       },
@@ -45,14 +45,14 @@ export const hasTestAnimation = () => {
     tl.from(topParts, {
       x: i => i % 2 === 0 ? 800 : -800,
       y: -800,
-      duration: 5,
-      stagger: .5
+      duration: 15,
+      stagger: 1
     }, 0)
     tl.from(bottomParts, {
       x: i => i % 2 === 0 ? 800 : -800,
       y: 1000,
-      duration: 5,
-      stagger: .5
+      duration: 15,
+      stagger: 1
     }, 12)
 
     // tl.from(allParts, {
