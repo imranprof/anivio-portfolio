@@ -22,11 +22,12 @@ export const hasRotatingSections = () => {
 
   const path = document.querySelector("#rotateSvgPath");
   const length = path.getTotalLength();
+  const startAt = length * 0.3;
 
   // base setup: hide path
   gsap.set(path, {
     strokeDasharray: length,
-    strokeDashoffset: -length,
+    strokeDashoffset: -(length - startAt),
   });
 
   for (let i = 1; i <= 2; i++) {

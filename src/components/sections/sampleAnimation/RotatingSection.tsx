@@ -24,9 +24,14 @@ const RotatingSection = () => {
             <path id="rotateSvgPath" d="M1459 742C1459 644.822 1439.9 548.595 1402.79 458.814C1365.67 369.033 1311.27 287.456 1242.7 218.741C1174.12 150.026 1092.71 95.5176 1003.11 58.3291C913.513 21.1407 817.481 2 720.5 2C623.519 2 527.487 21.1407 437.888 58.3292C348.289 95.5176 266.878 150.026 198.302 218.741C129.726 287.456 75.328 369.033 38.2149 458.814C1.10185 548.595 -18 644.822 -18 742" stroke="#883237" strokeWidth="4" />
           </svg>
         </div>
+        <div className="w-full h-1/2 absolute top-0 opacity-30">
+          <svg width="100%" height="100%" viewBox="0 0 1440 722" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path id="rotateSvgPath" d="M1459 742C1459 644.822 1439.9 548.595 1402.79 458.814C1365.67 369.033 1311.27 287.456 1242.7 218.741C1174.12 150.026 1092.71 95.5176 1003.11 58.3291C913.513 21.1407 817.481 2 720.5 2C623.519 2 527.487 21.1407 437.888 58.3292C348.289 95.5176 266.878 150.026 198.302 218.741C129.726 287.456 75.328 369.033 38.2149 458.814C1.10185 548.595 -18 644.822 -18 742" stroke="#883237" strokeWidth="4" />
+          </svg>
+        </div>
 
 
-        <div id="rotatingContainer" className=" border border-[#883237] rounded-full h-full  aspect-square flex justify-center">
+        <div id="rotatingContainer" className="rounded-full h-full  aspect-square flex justify-center">
           <div className="rotate-card list-item1 z-[2] absolute translate-y-[-50%]">
             <div className=" py-2  px-4 rounded-[98px] border border-[#883237] bg-white ">
               How Pryme Works
