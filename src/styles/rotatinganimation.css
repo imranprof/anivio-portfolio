@@ -1,0 +1,125 @@
+#rotatingContainer {
+  transition: transform .6s cubic-bezier(.445, .05, .55, .95);
+  /* transition: transform 1s; */
+}
+
+
+.rotate-card {
+  transition: opacity .45s cubic-bezier(.445, .05, .55, .95);
+}
+
+
+.parent-rotate-container {
+  width: 100%;
+  height: 1016px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.rotate-inside-con {
+  width: 100%;
+  height: 1480px;
+  position: absolute;
+  top: 33.3333%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.animate-half-cirle {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+}
+
+.under-half-cicle {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  opacity: 0.3;
+}
+
+#rotatingContainer {
+  border-radius: 9999px;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+}
+
+.rotate-card-1 {
+  z-index: 2;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+.rotate-card-2 {
+  opacity: 0;
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateX(-50%) rotate(-90deg);
+}
+
+.rotate-card-3 {
+  opacity: 0;
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%) rotate(180deg);
+}
+
+.rotate-title-custom {
+  padding: 0.5rem 1rem;
+  border-radius: 98px;
+  border: 1px solid #883237;
+  background-color: white;
+}
+
+.step-card-custom {
+  position: absolute;
+  margin-top: 80px;
+  width: 318px;
+  height: 276px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 16px;
+  border: 1px solid #883237;
+}
+
+.step-card-inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.step-card-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #883237;
+}
+
+.step-card-button {
+  background-color: #883237;
+  color: white;
+  border-radius: 98px;
+  padding: 1rem 2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.step-card-text {
+  color: #883237;
+  font-weight: 500;
+  text-align: center;
+}
