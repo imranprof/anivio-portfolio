@@ -6,7 +6,6 @@ gsap.registerPlugin(ScrollTrigger);
 export const hasRotatingSections = () => {
   const rotatingMainCon = document.querySelector("#rotateParentContainer");
   const rotateSection = document.querySelector("#rotatingContainer");
-  const stepsCard = gsap.utils.toArray(".step-card");
   const rotateCard = gsap.utils.toArray(".rotate-card");
 
   const tl = gsap.timeline({

@@ -9,5 +9,5 @@
 
 
 .rotate-card {
-  transition: opacity .45s;
+  transition: opacity .45s cubic-bezier(.445, .05, .55, .95);
 }
