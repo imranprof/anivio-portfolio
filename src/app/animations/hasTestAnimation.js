@@ -45,7 +45,7 @@ export const hasTestAnimation = () => {
       topParts,
       {
         x: (i) => (i % 2 === 0 ? 1500 : -1500),
-        // y: -800,
+        y: -800,
         duration: 15,
         stagger: 1,
       },

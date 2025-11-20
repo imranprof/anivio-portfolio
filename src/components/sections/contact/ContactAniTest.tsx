@@ -9,7 +9,7 @@ const ContactAniTest = () => {
     hasTestAnimation();
   })
   return (
-    <div id="svgContainer" className="overflow-hidden h-screen container flex justify-center items-center pt-[200px] svg-container">
+    <div id="svgContainer" className=" h-screen container flex justify-center items-center pt-[200px] svg-container">
       <div className="w-[40%] h-auto">
         <svg className="overflow-visible" width="100%" height="100%" viewBox="0 0 799 813" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g id="mainroup 252">
