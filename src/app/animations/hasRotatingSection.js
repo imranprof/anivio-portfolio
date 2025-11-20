@@ -7,12 +7,13 @@ export const hasRotatingSections = () => {
   const rotatingMainCon = document.querySelector("#rotateParentContainer");
   const rotateSection = document.querySelector("#rotatingContainer");
   const stepsCard = gsap.utils.toArray(".step-card");
+  const rotateCard = gsap.utils.toArray(".rotate-card");
 
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: rotatingMainCon,
       start: "bottom bottom",
-      end: "+=1500",
+      end: "+=1200",
       pin: true,
       // toggleActions: "play none none reverse",
       scrub: true,
@@ -35,7 +36,7 @@ export const hasRotatingSections = () => {
 
     tl.to(path, {
       strokeDashoffset: offset,
-      duration: 0.6,
+      duration: 0.3,
       ease: "none",
     });
 
@@ -44,23 +45,15 @@ export const hasRotatingSections = () => {
       // ease: "cubic-bezier(.445, .05, .55, .95)",
       duration: 0,
     });
-
-    tl.to(stepsCard[i - 1], {
-      opacity: 0,
-      ease: "cubic-bezier(.445, .05, .55, .95)",
+    tl.to(rotateCard[i], {
+      opacity: 1,
       duration: 0,
     });
-    tl.to(
-      stepsCard[i],
-      {
-        opacity: 1,
-        ease: "cubic-bezier(.445, .05, .55, .95)",
-        duration: 0,
-      },
-      "<+=.01"
-    );
 
-    //
+    tl.to(rotateCard[i - 1], {
+      opacity: 0,
+      duration: 0,
+    });
   }
   tl.to({}, { duration: 0.3 });
 

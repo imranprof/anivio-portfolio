@@ -7,6 +7,7 @@
   /* transition: transform 1s; */
 }
 
-.step-card {
+
+.rotate-card {
   transition: opacity .45s;
 }
