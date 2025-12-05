@@ -11,7 +11,7 @@ export const hasFaceAnimation = () => {
   const fBottomContainer = document.querySelector("#FGBottom");
   const fBottomParts = gsap.utils.toArray("[id^='Group']", fBottomContainer);
 
-  // const fAllTexts = gsap.utils.toArray("g[id^='FGTitle']", svgMainContainer);
+  const fAllTexts = gsap.utils.toArray("g[id^='FGTitle']", svgMainContainer);
 
   // console.log(allParts)
   // console.log("parts-- ", allParts.length)
@@ -23,9 +23,9 @@ export const hasFaceAnimation = () => {
     ScrollTrigger.create({
       trigger: svgMainContainer,
       start: "top top",
-      end: "+=1300px",
+      end: "+=900px",
       pin: true,
-      // markers: true,
+      //  markers: true,
       scrub: true,
     });
 
@@ -33,7 +33,7 @@ export const hasFaceAnimation = () => {
       scrollTrigger: {
         trigger: svgMainContainer,
         start: "clamp(top 85%)",
-        end: "+=1800px",
+        end: "+=1600px",
         scrub: true,
         // markers: true,
       },
@@ -55,17 +55,17 @@ export const hasFaceAnimation = () => {
         x: (i) => (i % 2 === 0 ? 2000 : -2000),
         y: 2000,
         duration: 5,
-        stagger: 0.8,
+        stagger: 0.9,
       },
-      4
+      8
     );
 
-    // tl.to(fAllTexts, {
-    //   autoAlpha: 0,
-    //   duration: 0.5,
-    //   stagger: 0.05,
-    //   ease: "expo",
-    // });
+    tl.to(fAllTexts, {
+      autoAlpha: 0,
+      duration: 0.5,
+      stagger: 0.05,
+      ease: "expo",
+    });
 
     //
   });
