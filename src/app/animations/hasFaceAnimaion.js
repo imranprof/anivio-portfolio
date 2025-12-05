@@ -4,14 +4,14 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export const hasFaceAnimation = () => {
-  const mapContainer = document.querySelector("#svgContainer");
+  const svgMainContainer = document.querySelector("#svgMainContainer");
 
-  const topContainer = document.querySelector("#GTop");
-  const topParts = gsap.utils.toArray("[id^='Group']", topContainer);
-  const bottomContainer = document.querySelector("#GBottom");
-  const bottomParts = gsap.utils.toArray("[id^='Group']", bottomContainer);
+  const fTopContainer = document.querySelector("#FGTop");
+  const fTopParts = gsap.utils.toArray("[id^='Group']", fTopContainer);
+  const fBottomContainer = document.querySelector("#FGBottom");
+  const fBottomParts = gsap.utils.toArray("[id^='Group']", fBottomContainer);
 
-  const allTexts = gsap.utils.toArray("g[id^='GTitle']", mapContainer);
+  // const fAllTexts = gsap.utils.toArray("g[id^='FGTitle']", svgMainContainer);
 
   // console.log(allParts)
   // console.log("parts-- ", allParts.length)
@@ -21,9 +21,9 @@ export const hasFaceAnimation = () => {
   mm.add("(min-width: 1024px)", () => {
     ScrollTrigger.refresh();
     ScrollTrigger.create({
-      trigger: mapContainer,
+      trigger: svgMainContainer,
       start: "top top",
-      end: "+=1500px",
+      end: "+=1300px",
       pin: true,
       // markers: true,
       scrub: true,
@@ -31,41 +31,41 @@ export const hasFaceAnimation = () => {
 
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: mapContainer,
-        start: "top 80%",
-        end: "+=2000px",
+        trigger: svgMainContainer,
+        start: "clamp(top 85%)",
+        end: "+=1800px",
         scrub: true,
         // markers: true,
       },
     });
 
     tl.from(
-      topParts,
+      fTopParts,
       {
-        x: (i) => (i % 2 === 0 ? 1500 : -1500),
-        y: -800,
-        duration: 15,
-        stagger: 1,
+        x: (i) => (i % 2 === 0 ? 4850 : -4850),
+        y: -2624,
+        duration: 5,
+        stagger: 0.8,
       },
       0
     );
     tl.from(
-      bottomParts,
+      fBottomParts,
       {
-        x: (i) => (i % 2 === 0 ? 800 : -800),
-        y: 1000,
-        duration: 15,
-        stagger: 1,
+        x: (i) => (i % 2 === 0 ? 2000 : -2000),
+        y: 2000,
+        duration: 5,
+        stagger: 0.8,
       },
-      12
+      4
     );
 
-    tl.to(allTexts, {
-      autoAlpha: 0,
-      duration: 0.5,
-      stagger: 0.05,
-      ease: "expo",
-    });
+    // tl.to(fAllTexts, {
+    //   autoAlpha: 0,
+    //   duration: 0.5,
+    //   stagger: 0.05,
+    //   ease: "expo",
+    // });
 
     //
   });
