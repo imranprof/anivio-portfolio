@@ -52,7 +52,7 @@ export const hasFaceAnimation = () => {
     tl.from(
       fBottomParts,
       {
-        x: (i) => (i % 2 === 0 ? 2000 : -2000),
+        x: (i) => (i % 2 === 0 ? 4000 : -4000),
         y: 2000,
         duration: 5,
         stagger: 0.9,
