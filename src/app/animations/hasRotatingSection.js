@@ -8,6 +8,22 @@ export const hasRotatingSections = () => {
   const rotateSection = document.querySelector("#rotatingContainer");
   const rotateCard = gsap.utils.toArray(".rotate-card");
 
+  //scale animation
+  gsap.fromTo(
+    ".rotate-inside-con",
+    { opacity: 0, scale: 0.7 },
+    {
+      opacity: 1,
+      scale: 1,
+      scrollTrigger: {
+        trigger: rotatingMainCon,
+        start: "top 50%",
+        markers: true,
+        toggleActions: "play none play reverse",
+      },
+    }
+  );
+
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: rotatingMainCon,
