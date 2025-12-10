@@ -11,14 +11,14 @@ export const hasRotatingSections = () => {
   //scale animation
   gsap.fromTo(
     ".rotate-inside-con",
-    { opacity: 0, scale: 0.7 },
+    { opacity: 0, scale: 0.5 },
     {
       opacity: 1,
       scale: 1,
       scrollTrigger: {
         trigger: rotatingMainCon,
         start: "top 50%",
-        markers: true,
+        //markers: true,
         toggleActions: "play none play reverse",
       },
     }
