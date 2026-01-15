@@ -28,11 +28,11 @@
   },
   {
     "id": 4,
-    "title": "Demo Project",
+    "title": "Pryme Medical",
     "main_img": "/imgs/projects/06hero.jpg",
     "thumb_img": "/imgs/projects/06hero1.jpg",
-    "year": 2023,
-    "tag": "Demo View",
-    "slug": "blog-platform"
+    "year": 2025,
+    "tag": "GSAP/Web Animation",
+    "slug": "pryme-medical"
   }
 ]

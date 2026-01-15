@@ -33,14 +33,14 @@
     "live_link": "https://preview.themeforest.net/item/arolax-creative-digital-agency-react-nextjs-template/full_screen_preview/58596468"
   },
   {
-    "slug": "blog-platform",
-    "title": "Demo Project",
+    "slug": "pryme-medical",
+    "title": "Pryme Medical",
     "description": "A showcase of GSAP-powered animation effects.",
     "main_img": "/imgs/projects/06hero.jpg",
     "thumb_img": "/imgs/projects/06hero1.jpg",
-    "year": 2023,
-    "tag": "Demo Project",
-    "techs": "Nextjs & ShadcnUi",
-    "live_link": "https://anivio-portfolio.vercel.app/"
+    "year": 2025,
+    "tag": "GSAP / Web animation",
+    "techs": "GSAP , Lenis, HTML & CSS",
+    "live_link": "https://pryme-medicals.webflow.io/"
   }
 ]
